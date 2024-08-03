@@ -1,0 +1,88 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color:  rgba(0, 119, 255, 0.863);
+    color: #1f1f1f;
+    font-weight: 300;
+    overflow: hidden;
+}
+.up{
+    display: flex;
+    padding: 3px;
+}
+
+.header img{
+    width: 25px;
+    height: 25px; 
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    padding-right: 3px;
+    align-items: center;
+    background-color: rgb(0, 63, 126);
+}
+
+.sidebar-items{
+    margin: 8%;
+}
+.sidebar-items img{
+    width: 30px;
+    height: 30px;
+    transition: filter 0.1s; /* Adiciona uma transição suave para o filtro */
+}
+.sidebar-items img:hover {
+    filter: brightness(60%); /* Escurece a imagem em 20% ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% ao passar o mouse */
+}
+
+#editor{
+    width: 100%;
+    background-color:  rgba(0, 119, 255, 0.555);
+}
+
+#console {
+    overflow: auto;
+    background-color: #161616;
+    color: #389fff;
+    font-family: monospace;
+    text-align: start;
+    height: 200px;
+    width: 100%;
+    padding-bottom: 15px; /* Adiciona um pouco de espaçamento interno */
+}
+
+
+/* Esconde o campo de upload original */
+input[type="file"] {
+    display: none;
+}
+
+/* Estiliza o label que será usado como botão de upload */
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+.button-div {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button-div:active {
+    transform: scale(1.3);
+    box-shadow: 0 1px 2px rgba(0, 38, 255, 0.014);
+}

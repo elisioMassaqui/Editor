@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandi Code</title>
+    <!-- Link para a fonte Roboto do Google Fonts e icones-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/circleLogo.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.51.0-dev-20240628/min/vs/editor/editor.main.min.css">
+
+    <!-- CDN do Monaco Editor -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.51.0-dev-20240628/min/vs/loader.min.js"></script>
+    <script src="./editor.js"></script>
+</head>
+
+<body>
+    <div class="up">
+    <div class="header">
+        <div class="tooltip">
+            <div class="circleLogo button-div" id="loadContentButton">
+                <img src="icones/wandi.png" alt="">
+            </div>
+            <span class="tooltiptext">Olá Wandinho</span>
+        </div>
+    </div>
+        <i id="fileName"> Wandicode...</i> 
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidebar-items button-div">
+                <div class="tooltip">
+                    <div>
+                        <label for="fileInput" class="custom-file-upload">
+                            <img src="icones/pasta.png" alt="">
+                        </label>
+                        <input type="file" id="fileInput" />
+                    </div>
+                    <span class="tooltiptext">Reservar Wandi</span>
+                </div>
+            </div>
+            <div class="sidebar-items button-div tooltip" id="openFileButton"><img src="icones/botao-adicionar.png" alt="">
+                <span class="tooltiptext">Adicionar wandi</span>
+            </div>
+            <div class="sidebar-items button-div tooltip" id="saveButton"><img src="icones/code.png" alt="">
+                <span class="tooltiptext">Salvar wandi</span>
+            </div>
+            <div class="sidebar-items button-div tooltip" id="compileButton"><img src="icones/verifica.png" alt="">
+                <span class="tooltiptext">Compilar wandi</span>
+            </div>
+            <div class="sidebar-items button-div tooltip" id="uploadButton"><img src="icones/enviar.png" alt="">
+                <span class="tooltiptext">Enviar wandi</span>
+            </div>
+            <div class="sidebar-items button-div tooltip" id="clear-btn"><img src="icones/terminal.png" alt="">
+                <span class="tooltiptext">Limpar console</span>
+            </div>
+        </div>
+            <div id="editor"></div>
+    </div>
+    <div><div id="console"></div></div>
+</body>
+
+</html>
